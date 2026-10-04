@@ -112,7 +112,8 @@ graph TD
 pip install -r detection/requirements_offboard.txt
 
 # HTTP 相機；低延遲 UDP/H264 可改為 --camera-backend udp
-python detection/rear_cam_sam2_publisher.py --jetson-host <JETSON_IP>
+python detection/rear_cam_sam2_publisher.py --jetson-host <JETSON_IP> \
+  --sam-model detection/models/sam2.1_b.pt
 
 # Jetson：沿用既有模型契約，開啟 offboard 末段接近與增強 LiDAR 防護
 python3 integration/mission_pipeline.py --real --target-source offboard \
@@ -136,11 +137,11 @@ YOLO 權重 `detection/models/best.pt` 與 PPO/VecNormalize 配對
 SAM2 權重約 162 MB，另行下載；在 repo 根目錄完成 offboard 相依安裝後執行：
 
 ```bash
-python -c "from ultralytics.utils.downloads import attempt_download_asset; attempt_download_asset('detection/sam2.1_b.pt')"
+python -c "from ultralytics.utils.downloads import attempt_download_asset; attempt_download_asset('detection/models/sam2.1_b.pt')"
 ```
 
 `integration/sugarbox_rl_approach_final2.py` 預設使用上述 repo 路徑，執行模式為 `DRY_RUN`。
-若使用自己的檔案，可設定 `SUGARBOX_YOLO_MODEL`、`SUGARBOX_SAM2_MODEL`、
+若使用自己的檔案，可設定 `SUGARBOX_YOLO_MODEL`、`SUGARBOX_SAM_MODEL`（亦接受 `SUGARBOX_SAM2_MODEL`）、
 `SUGARBOX_HOMOGRAPHY`、`SUGARBOX_RL_MODEL` 與 `SUGARBOX_VECNORMALIZE` 環境變數。
 對應的 Jetson 馬達橋接程式是 `integration/sugarbox_rl_motor_server.py`；
 此獨立流程與完整 mission pipeline 分開執行，序列埠仍須由單一程序持有。
