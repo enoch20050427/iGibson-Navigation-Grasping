@@ -1,0 +1,17 @@
+{
+  "schema": "sugarbox-arm-bottom-switch-v3",
+  "rear_handoff_v": 470,
+  "arm_switch_v": 432,
+  "travel_view_confirmed": false,
+  "forward_view_confirmed": false,
+  "final": {
+    "schema": "sugarbox-arm-pixels-v1",
+    "observation_s2_deg": 120,
+    "target_u": null,
+    "target_v": null,
+    "yaw_sign": null,
+    "forward_pixel_sign": null,
+    "front_stop_m": null,
+    "confirmed": false
+  }
+}

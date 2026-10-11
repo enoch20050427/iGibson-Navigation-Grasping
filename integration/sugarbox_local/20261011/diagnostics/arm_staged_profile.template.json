@@ -1,0 +1,66 @@
+{
+  "schema": "sugarbox-arm-staged-pixels-v2",
+  "rear_handoff_v": null,
+  "stages": [
+    {
+      "schema": "sugarbox-arm-pixels-v1",
+      "observation_s2_deg": 130,
+      "target_u": null,
+      "target_v": null,
+      "yaw_sign": null,
+      "forward_pixel_sign": null,
+      "front_stop_m": null,
+      "confirmed": false
+    },
+    {
+      "schema": "sugarbox-arm-pixels-v1",
+      "observation_s2_deg": 128,
+      "target_u": null,
+      "target_v": null,
+      "yaw_sign": null,
+      "forward_pixel_sign": null,
+      "front_stop_m": null,
+      "confirmed": false
+    },
+    {
+      "schema": "sugarbox-arm-pixels-v1",
+      "observation_s2_deg": 126,
+      "target_u": null,
+      "target_v": null,
+      "yaw_sign": null,
+      "forward_pixel_sign": null,
+      "front_stop_m": null,
+      "confirmed": false
+    },
+    {
+      "schema": "sugarbox-arm-pixels-v1",
+      "observation_s2_deg": 124,
+      "target_u": null,
+      "target_v": null,
+      "yaw_sign": null,
+      "forward_pixel_sign": null,
+      "front_stop_m": null,
+      "confirmed": false
+    },
+    {
+      "schema": "sugarbox-arm-pixels-v1",
+      "observation_s2_deg": 122,
+      "target_u": null,
+      "target_v": null,
+      "yaw_sign": null,
+      "forward_pixel_sign": null,
+      "front_stop_m": null,
+      "confirmed": false
+    },
+    {
+      "schema": "sugarbox-arm-pixels-v1",
+      "observation_s2_deg": 120,
+      "target_u": null,
+      "target_v": null,
+      "yaw_sign": null,
+      "forward_pixel_sign": null,
+      "front_stop_m": null,
+      "confirmed": false
+    }
+  ]
+}

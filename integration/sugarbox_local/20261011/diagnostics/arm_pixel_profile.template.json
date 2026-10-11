@@ -1,0 +1,10 @@
+{
+  "schema": "sugarbox-arm-pixels-v1",
+  "target_u": null,
+  "target_v": null,
+  "yaw_sign": null,
+  "forward_pixel_sign": null,
+  "observation_s2_deg": null,
+  "front_stop_m": null,
+  "confirmed": false
+}
