@@ -1,7 +1,17 @@
 {
   "schema": "sugarbox-navigation-retraining-alignment-v1",
   "date": "2026-10-17",
-  "status": "handoff_reference_not_a_training_or_drive_configuration",
+  "status": "historical_snapshot_superseded_not_for_training_or_deployment",
+  "current_source_reference": {
+    "repository": "https://github.com/koala915/iGibson-Navigation-Grasping",
+    "pull_request": 9,
+    "branch": "codex/approach-lidar-frame",
+    "verified_commit": "eafba63f3ba32673738f2daa29aa8ec80686e7ab",
+    "alignment_document": "docs/handoff/SUGARBOX_PPO_CURRENT_BASELINE_2026-10-17.md",
+    "old_snapshot_must_not_overwrite_current_source": true,
+    "first_training_does_not_require_turn_hold_or_automatic_reverse_recovery": true,
+    "new_observation_dimension_finalized": false
+  },
   "destination_repository": "https://github.com/koala915/iGibson-Navigation-Grasping",
   "training_repository": "https://github.com/koala915/igibson_x3_test",
   "old_training_reference_commit": "12f53c7d4e0c1ed06ac3a13def711e63aed01288",

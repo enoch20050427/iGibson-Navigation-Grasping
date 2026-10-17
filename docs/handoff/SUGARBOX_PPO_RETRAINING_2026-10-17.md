@@ -1,5 +1,7 @@
 # Sugarbox PPO 重訓交接：固定巡航姿態
 
+> **已依 PR #10 review 更新：本頁連結的原始碼/ZIP 是歷史快照，不是現行部署版本。請先讀 [GitHub 現行基線與最新重訓決策](SUGARBOX_PPO_CURRENT_BASELINE_2026-10-17.md)。後續以 PR #9 的 `codex/approach-lidar-frame`（本次核對 `eafba63`）為起點，不覆寫回本快照。第一版不預設把方向保持/自動後退救援放進訓練。**
+
 2026-10-17，enoch20050427 的獨立實機接近版本。這次只新增交接快照，不覆寫團隊主線控制器，不合併任務流程，也不啟動實機或訓練。
 
 ## 從這裡開始
@@ -9,7 +11,7 @@
 - [機器可讀的契約對齊表](../../integration/sugarbox_local/20261017_retraining_handoff/contract_alignment.json)
 - [下載固定巡航版 ZIP](packages/sugarbox_ppo_retraining_handoff_20261017_cruise.zip)
 
-ZIP SHA256：`2e76a6e1050c61d8e4cbdd2591c1b0a656f502dfb2155e430e19c5d10f07b03c`。
+ZIP SHA256 見同目錄 `packages/sugarbox_ppo_retraining_handoff_20261017_cruise.zip.sha256`；快照 README 已補上歷史警告，不能使用早期留言的舊雜湊。
 
 ## 最新決定
 

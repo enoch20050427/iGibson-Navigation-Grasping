@@ -1,5 +1,9 @@
 # Sugarbox PPO 重訓交接：固定巡航姿態
 
+> **歷史參考，非部署版本。** 已依 [PR #10 review](https://github.com/koala915/iGibson-Navigation-Grasping/pull/10#pullrequestreview-5558186386) 核對現行來源：PR #9 的 `codex/approach-lidar-frame`，commit `eafba63f3ba32673738f2daa29aa8ec80686e7ab`。請先讀 [最新基線與修正決策](../../../docs/handoff/SUGARBOX_PPO_CURRENT_BASELINE_2026-10-17.md)（ZIP 使用者請到 PR #10 的 docs/handoff 讀此檔），不要將本包覆寫到現行程式。舊鏡射/射線取樣/側邊盲區和旗標限制均只保留作歷史證據，不是建議的訓練輸入。
+
+> **最新方案優先：** 先訓練 PPO 自己繞障，模擬真實 actuator 與基本安全底線；不預設加入強制方向保持、換向確認或自動後退救援。舊文件的「共用所有選定過濾器」不是當前已定案要求。新 observation 維度也未定案，不先擴充。需要的話，後續另作 A/B。
+
 更新：2026-10-17。使用者已取消接近過程的三段式手臂視角切換，全程固定巡航／循線／行駛姿態 `(90,140,0,0,90,30)`。本包取代同日較早的 21 檔版本。
 
 ## 為什麼不只有 final2.py
